@@ -2,6 +2,10 @@ var correctCode = 0;
 var enabled = true;
 var consoleEnabled = false;
 
+function Redirect(website) {
+  window.location = website;
+}
+
 function setup() {
   noCanvas();
 }
@@ -11,6 +15,7 @@ function draw() {
     if (enabled == true) {
       console.log(correctCode);
       console.log("activating");
+      //Redirect("https://woofpuppywoof.github.io/snake");
       enabled = false;
     }
   }
